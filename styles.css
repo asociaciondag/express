@@ -1,0 +1,219 @@
+@import "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css";
+@import "https://use.typekit.net/zih5lrm.css";
+@import "variables.css";
+@import "common.css";
+@import "wrappers.css";
+
+/**
+ * Barra superior común a todos os proxectos
+ */
+.page-header {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	z-index: 2;
+
+	& .page-logo {
+		display: flex;
+		color: inherit;
+		text-decoration: none;
+		outline: 0;
+
+		& strong {
+			font-weight: var(--fw-light);
+			display: block;
+			font-size: .8rem;
+			max-width: 10em;
+			line-height: 1;
+		}
+
+		& svg {
+			margin-right: 0.5em;
+		}
+
+		& path {
+			fill: rgba(255, 255, 255, 0.5);
+		}
+
+		&:hover {
+			color: white;
+
+			& path {
+				fill: white;
+			}
+		}
+	}
+}
+
+.page-header {
+	background: white;
+
+	& .page-logo {
+		color: var(--color-main);
+
+		& path {
+			fill: var(--color-main);
+		}
+
+		&:hover {
+			color: var(--color-dark);
+
+			& path {
+				fill: var(--color-dark);
+			}
+		}
+	}
+}
+html {
+    background-color: #fdf6ae;
+}
+
+.gris{
+	background-color: #e6e6e4;
+}
+.azul{
+	background-color: #c8e9f0;
+}
+.laranxa{
+	background-color: #fed5b5;
+}
+.amarelo{
+	background-color: #fdf6ae;
+	padding-bottom: 30px;
+    position: relative;
+}
+.contido{
+	max-width: 700px;
+	text-align: center;
+	margin:auto;
+	padding: 0 15px 45px 15px;
+}
+.logo{
+	padding-left: 10px;
+	display: inline-block;
+}
+.dereita{
+	position:absolute;
+	right: 15px;
+	top: 20px;
+}
+.foto{
+	width: 50%;
+}
+.info{
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+p{
+	font-family: 'Isaac', sans-serif;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+	margin: 15px 0 0 0;
+	text-align: left;
+}
+h1{
+	font-family: roster-condensed, serif;
+	font-weight: 400;
+	font-size: 38px;
+	margin: 0;
+}
+h2{
+	font-family: roster-expanded, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 19px;
+	margin: 0 0 10px 0;
+	background-color: #000000;
+	width: 190px;
+	padding: 2px 15px 6px 15px;
+	letter-spacing: 0.03em;
+}
+h3{
+	font-family: roster-condensed, serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 28px;
+	margin: 30px 0 20px 0;
+	border-bottom: solid 2px #000000;
+	padding-bottom: 5px;
+}
+.data{
+	width: auto;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.semi{
+	font-weight: 600;
+}
+.imp{
+	font-size: 21px;
+	line-height: 30px;
+	margin-top: 0;
+}
+.tazul{
+	color: #c8e9f0;
+}
+.tlaranxa{
+	color: #fed5b5;
+}
+.tamarelo{
+	color: #fdf6ae;
+}
+.boton{
+	background-color: #FFFFFF;
+	width: auto;
+	margin: 36px 0 0 0;
+}
+p > a {
+	text-decoration: underline;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+a:hover{
+	color:#C3C3C3;
+}
+.colaborador {
+	margin-right: 150px;
+}
+
+@media screen and (min-width : 300px) and (max-width : 660px) {
+.foto{
+	width: 100%;
+}
+.info{
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 15px;
+}	
+}
+
+.flickr {
+	& iframe {
+		display: block;
+		margin: 0 auto !important;
+		max-width: 100%;
+		width: 700px !important;
+	}
+
+	& img {
+		display: block;
+		margin: 0 auto !important;
+		max-width: 100%;
+		width: 700px !important;
+	}
+}
